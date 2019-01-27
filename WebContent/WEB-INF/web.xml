@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>QnSystem</display-name>
+  <welcome-file-list>
+  <welcome-file>Public/login.jsp</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>QueryProblemsServlet</display-name>
+    <servlet-name>QueryProblemsServlet</servlet-name>
+    <servlet-class>com.Problems.QueryProblemsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QueryProblemsServlet</servlet-name>
+    <url-pattern>/QueryProblems</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AdminLoginServlet</display-name>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <servlet-class>com.Problems.AdminLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <url-pattern>/adminlogin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteProblemsServlet</display-name>
+    <servlet-name>DeleteProblemsServlet</servlet-name>
+    <servlet-class>com.Problems.DeleteProblemsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteProblemsServlet</servlet-name>
+    <url-pattern>/DeleteProblems</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>IncreaseProbemsServlet</display-name>
+    <servlet-name>IncreaseProbemsServlet</servlet-name>
+    <servlet-class>com.Problems.IncreaseProbemsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IncreaseProbemsServlet</servlet-name>
+    <url-pattern>/IncreaseProbems</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateProblemsServlet</display-name>
+    <servlet-name>UpdateProblemsServlet</servlet-name>
+    <servlet-class>com.Problems.UpdateProblemsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateProblemsServlet</servlet-name>
+    <url-pattern>/updateProblems</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.Problems.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
